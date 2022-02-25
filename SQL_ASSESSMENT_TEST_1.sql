@@ -1,7 +1,6 @@
 --ASSESSMENT TEST 1
 
---customers who spent >= 110 dollars w staf member 2
-
+--customers who spent >= 110 dollars w staff member 2
 SELECT customer_id, staff_id, SUM(amount) FROM payment
 WHERE staff_id = 2
 GROUP BY customer_id, staff_id
